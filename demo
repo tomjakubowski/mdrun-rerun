@@ -161,19 +161,3 @@ echo "grompp finished"
 echo "starting mdrun..."
 mdrun -nice 4 -s ${MOL}_md -o ${MOL}_md -c ${MOL}_after_md -v >& ! output.mdrun_md
 echo "mdrun finished"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
