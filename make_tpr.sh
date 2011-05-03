@@ -16,3 +16,9 @@ echo "Starting grompp (with force writing)..."
 grompp -f md-with-forces -c ${MOL}_b4md  -p ${MOL} -o ${MOL}_md-with-forces \
     -po md-with-forcesout >& ! output.grompp_md-with-forces
 echo "grompp finished"
+
+echo "Starting grompp (with force writing, nonbonded)..."
+grompp -f md-with-nonbonded-forces -c ${MOL}_b4md -p ${MOL}-nobonds \
+    -o ${MOL}_md-with-nonbonded-forces -po md-with-nonbonded-forcesout \
+    >& ! output.grompp_md-with-nonbonded-forces
+echo "grompp finished"
