@@ -1,4 +1,4 @@
-title               =  cpeptide MD
+title               =  cpeptide MD with all forces
 cpp                 =  /usr/bin/cpp
 constraints         =  all-bonds
 integrator          =  md
